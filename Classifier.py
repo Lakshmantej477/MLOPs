@@ -5,7 +5,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 
-df = pd.read_csv("/content/MLOPs/data/iris.csv") 
+# df = pd.read_csv("/content/MLOPs/data/iris.csv") 
+df = pd.read_csv("C:\Users\admin\Downloads\new_MLOPs\data\iris.csv")
 features = ['sepal.length','sepal.width','petal.length','petal.width']
 target = 'variety'
 
