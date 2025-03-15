@@ -9,7 +9,7 @@ df = pd.read_csv("/content/MLOPs/data/iris.csv")
 features = ['sepal.length','sepal.width','petal.length','petal.width']
 target = 'variety'
 
-x_train,x_test,y_train,y_test = train_test_split(df[features],df[target])
+x_train,x_test,y_train,y_test = train_test_split(df[features],df[target],test_size=0.2)
 clf = DecisionTreeClassifier(criterion='entropy')
 clf.fit(x_train,y_train)
 y_pred = clf.predict(x_test)
